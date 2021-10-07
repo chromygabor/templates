@@ -1,0 +1,54 @@
+{
+  "name": "@chromygabor/docker-env",
+  "version": "1.0.0",
+  "description": "This is my first module to provide some utils for docker",
+  "main": "dist/index.js",
+  "bin": "dist/main.js",
+  "license": "MIT",
+  "author": "Gabor Chromy",
+  "dependencies": {
+    "apollo-server-express": "latest",
+    "class-validator": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "graphql": "latest",
+    "reflect-metadata": "latest",
+    "session-file-store": "latest",
+    "type-graphql": "latest",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/express-session": "latest",
+    "@types/node": "latest",
+    "@types/session-file-store": "latest",
+    "@types/uuid": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
+    "prettier": "latest",
+    "ts-node": "latest",
+    "ts-node-dev": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "ts-node-dev --respawn --ignore-watch data 'src/app.ts'",
+    "dev:debug": "ts-node-dev --debug --inspect=4321 --respawn --preserve-symlinks --ignore-watch data src/app.ts",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "test": "mocha --timeout 60000",
+    "test:watch": "mocha --watch --timeout 60000"
+  },
+  "private": true,
+  "directories": {
+    "src": "./src",
+    "test": "./test"
+  }
+}
