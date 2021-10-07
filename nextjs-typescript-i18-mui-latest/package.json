@@ -1,0 +1,28 @@
+{
+  "name": "nextjs",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "@material-ui/lab": "latest",
+    "clsx": "latest",
+    "next": "latest",
+    "next-translate": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "underscore": "latest"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/underscore": "latest",
+    "fork-ts-checker-webpack-plugin": "latest",
+    "typescript": "latest"
+  }
+}
